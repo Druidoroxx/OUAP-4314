@@ -1,3 +1,5 @@
+Sujet 4 : Logic Immo
+Equipe : TANON KOUADIO Astrid et HO Tay-Son
 ## Set up requis pour le projet:
 
 	Install Python
