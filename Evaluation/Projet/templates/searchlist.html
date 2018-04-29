@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>{{t}}</title>
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
+	</head>
+<body>
+	<h1>{{h}}</h1>
+	<hr>
+	{% if posts[0] %}
+	<h3>Résultat de la recherche :</h3>
+	<table>
+	    <tr id="row">
+	    	<td class="location">Localisation</td>
+	    	<td class="name">Titre</td>
+	    	<td class="desc">Description</td>
+	    	<td class="typ">Type</td>
+	    	<td class="pr">Prix</td>
+		<td class="func">Delete</td>
+		<td class="func">Modify</td>
+	    </tr>
+		{% for post in posts %}
+		<tr class="datas">
+			<td class="location">{{ post["location"] }}</td>
+			<td class="name">{{ post["name"] }}</td>
+			<td class="desc">{{ post["desc"] }}</td>
+			<td class="date">{{ post["typ"] }}</td>
+			<td class="pr">{{ post["pr"] }}</td>
+			<td class="func1"><a href="./remove?_id={{ post['_id'] }}"><button type="submit">supprimer</button></a></td>
+			<td class="func1"><a href="./update?_id={{ post['_id'] }}"><button type="submit">modifier</button></a></td>
+		</tr>
+		{% endfor %}
+	{% else %}
+		<h4>Aucune correspondance</h4>
+	{% endif %}
+	</table>
+	<a href="/"Retour</a>
+</body>
+</html>
