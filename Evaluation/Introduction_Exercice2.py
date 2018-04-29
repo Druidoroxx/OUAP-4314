@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import requests 
 import re
 from urlparse import urlparse
@@ -32,3 +33,18 @@ class Requete:
                 print domain
                 
 
+=======
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 15 09:22:07 2018
+
+@author: hot
+"""
+
+def suppr_space(self):
+    self.response.replace(" ","")
+        
+def suppr_car(self):
+    self.response.replace()
+>>>>>>> fb52f117373d0947a5a71f8e96b6346bd4ba841d
