@@ -1,13 +1,8 @@
 <html>
 	<head>
 		<title>{{t}}</title>
-		<!-- href="/static/assets/style.css"-->
 		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/style.css')}}" >
-		<!--
-		<link rel="stylesheet" type="text/css"  href="{{ url_for('static',filename='assets/emoji.css')}}" >
-		<script src="{{ url_for('static',filename='assets/twemoji.min.js')}}"></script>  
-		<script src="{{ url_for('static',filename='assets/emoji.js')}}"></script>
-		-->
+
 	</head>
 <body>
 	<h1>{{ h }}</h1>
@@ -37,8 +32,17 @@
 	</form>
 	</div>
 	<b><big>Annonces:</big></b>
-	<table>
+	<table border="1" width="100%">
+    	 <col style="width:10%">
+    	 <col style="width:10%">
+    	 <col style="width:10%">
+    	 <col style="width:45%">
+    	 <col style="width:7%">
+    	 <col style="width:5%">
+    	 <col style="width:6%">
+    	 <col style="width:6%">
 	    <tr id="row">
+    	   <th class="url">URL</th>
 	    	<th class="location">Localisation</th>
 	    	<th class="name">Titre</th>
 	    	<th class="desc">Description</th>
@@ -49,6 +53,7 @@
 	    </tr>
 	{% for post in posts %}
 		<tr class="datas">
+    		<td class="url">{{ post["url"] }}</td>
 			<td class="location">{{ post["location"] }}</td>
 			<td class="name">{{ post["name"] }}</td>
 			<td class="desc">{{ post["desc"] }}</td>

@@ -9,8 +9,9 @@ import scrapy
 
 
 class ProjetlogicItem(scrapy.Item):
-    lieu = scrapy.Field()
-    titre = scrapy.Field()
+    url = scrapy.Field()
+    location = scrapy.Field()
+    name = scrapy.Field()
     desc = scrapy.Field()
     typ = scrapy.Field()
-    prix = scrapy.Field()
+    pr = scrapy.Field()

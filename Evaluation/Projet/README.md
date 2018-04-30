@@ -2,6 +2,10 @@ Sujet 4 : Logic Immo
 
 Equipe : TANON KOUADIO Astrid et HO Tay-Son
 
+Pour cloner le projet : 
+
+'git clone https://github.com/Taysonho/OUAP-4314.git'
+
 ## Set up requis pour le projet:
 
 	Install Python
