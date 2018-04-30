@@ -23,17 +23,19 @@ Pour cloner le projet :
 		
 
 ## Exécution :
-
-	Run Scrapy
-		'cd ~\OUAP-4314\Evaluation\Projet\projetlogic'
-		'scrapy crawl logic_immo -o logicimmo.json'
 		
 	Run MongoDB
-		`sudo service mongod start`
+		`sudo service mongod start` pour linux
+		'cd ~\MongoDB\Server\3.6\bin' sous windows
+		'mongod'
 	
 	Run le fichier flask(mongo_flask.py)
 		'cd ~\OUAP-4314\Evaluation\Projet'
 		`python mongo_flask.py`
+		
+	Run Scrapy
+		'cd ~\OUAP-4314\Evaluation\Projet\projetlogic'
+		'scrapy crawl logic_immo -o logicimmo.json'	
 
 	Ouvrir un navigateur avec l'adresse:
 		`http://localhost:5000'
