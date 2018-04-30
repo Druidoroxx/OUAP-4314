@@ -1,5 +1,7 @@
 Sujet 4 : Logic Immo
+
 Equipe : TANON KOUADIO Astrid et HO Tay-Son
+
 ## Set up requis pour le projet:
 
 	Install Python
@@ -16,14 +18,24 @@ Equipe : TANON KOUADIO Astrid et HO Tay-Son
 		`pip install pymongo'
 		
 
-## exécution :
+## Exécution :
+
+	Run Scrapy
+		'cd ~\OUAP-4314\Evaluation\Projet\projetlogic'
+		'scrapy crawl logic_immo -o logicimmo.json'
+		
 	Run MongoDB
 		`sudo service mongod start`
 	
 	Run le fichier flask(mongo_flask.py)
+		'cd ~\OUAP-4314\Evaluation\Projet'
 		`python mongo_flask.py`
 
 	Ouvrir un navigateur avec l'adresse:
 		`http://localhost:5000'
+		
+
+
+
 
 
